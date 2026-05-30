@@ -17,7 +17,8 @@ export default function Home() {
 
       <section className="max-w-6xl mx-auto px-6 py-24">
         <h1 className="text-5xl font-bold mb-6">
-          Eyes, Brain, and Cognition (EBaC) Lab
+                 Eyes, Brain, and Cognition (EBaC) Lab
+
         </h1>
 
         <p className="text-xl text-gray-600 max-w-3xl">
