@@ -5,26 +5,67 @@ export default function PeoplePage() {
     <main className="max-w-6xl mx-auto px-8 py-20">
       <h1 className="text-5xl font-semibold mb-10">People</h1>
 
-      {/* Lab photos placeholder */}
-      <section className="mb-24">
-        <h2 className="text-3xl font-semibold mb-6">Lab Photos</h2>
+      <nav className="mb-16 flex flex-wrap gap-3">
+        <a
+          href="#lab-photos"
+          className="border px-4 py-2 rounded-md hover:bg-gray-100 transition"
+        >
+          Lab Photos
+        </a>
 
-        <div className="border rounded-2xl bg-gray-50 p-10 text-center">
-          <p className="text-gray-600">
-            Lab group photos will be added here.
-          </p>
-        </div>
-      </section>
+        <a
+          href="#principal-investigators"
+          className="border px-4 py-2 rounded-md hover:bg-gray-100 transition"
+        >
+          Principal Investigators
+        </a>
+
+        <a
+          href="#postgraduate-students"
+          className="border px-4 py-2 rounded-md hover:bg-gray-100 transition"
+        >
+          Postgraduate Students
+        </a>
+
+        <a
+          href="#research-placement-students"
+          className="border px-4 py-2 rounded-md hover:bg-gray-100 transition"
+        >
+          Research Placement Students
+        </a>
+
+        <a
+          href="#alumni"
+          className="border px-4 py-2 rounded-md hover:bg-gray-100 transition"
+        >
+          Alumni
+        </a>
+
+        <a
+          href="#collaborators"
+          className="border px-4 py-2 rounded-md hover:bg-gray-100 transition"
+        >
+          Collaborators
+        </a>
+      </nav>
 
       <div className="space-y-24">
-        {/* Principal Investigators */}
-        <section>
+        <section id="lab-photos">
+          <h2 className="text-3xl font-semibold mb-6">Lab Photos</h2>
+
+          <div className="border rounded-2xl bg-gray-50 p-10 text-center">
+            <p className="text-gray-600">
+              Lab group photos will be added here.
+            </p>
+          </div>
+        </section>
+
+        <section id="principal-investigators" className="border-t pt-20">
           <h2 className="text-3xl font-semibold mb-12">
             Principal Investigators
           </h2>
 
           <div className="space-y-24">
-            {/* Federica */}
             <section className="grid md:grid-cols-[280px_1fr] gap-12">
               <div>
                 <Image
@@ -37,9 +78,7 @@ export default function PeoplePage() {
               </div>
 
               <div>
-                <h3 className="text-3xl font-semibold">
-                  Federica Degno
-                </h3>
+                <h3 className="text-3xl font-semibold">Federica Degno</h3>
 
                 <div className="mt-4 space-y-2 text-gray-600">
                   <p>Senior Lecturer in Psychology</p>
@@ -60,27 +99,24 @@ export default function PeoplePage() {
                 </div>
 
                 <p className="mt-8 leading-8 text-gray-700">
-                  Federica joined Bournemouth University in 2021 as a
-                  Lecturer in Psychology after holding a Research Fellowship
-                  in Cognitive Neuroscience at the University of Central
-                  Lancashire. She received her BSc and MSc from the
-                  University of Milano-Bicocca and completed her PhD in
-                  Psychology at the University of Southampton.
+                  Federica joined Bournemouth University in 2021 as a Lecturer
+                  in Psychology after holding a Research Fellowship in Cognitive
+                  Neuroscience at the University of Central Lancashire. She
+                  received her BSc and MSc from the University of
+                  Milano-Bicocca and completed her PhD in Psychology at the
+                  University of Southampton.
                 </p>
 
                 <p className="mt-4 leading-8 text-gray-700">
                   Her research focuses on visual cognition, reading, eye
-                  movements, and the relationship between behavioural and
-                  neural measures of language processing. She combines
-                  eye-tracking, event-related potentials (ERPs), and
-                  co-registration methods to investigate cognition during
-                  natural reading.
+                  movements, and the relationship between behavioural and neural
+                  measures of language processing. She combines eye-tracking,
+                  event-related potentials (ERPs), and co-registration methods
+                  to investigate cognition during natural reading.
                 </p>
 
                 <div className="mt-8">
-                  <h4 className="font-semibold mb-3">
-                    Research Interests
-                  </h4>
+                  <h4 className="font-semibold mb-3">Research Interests</h4>
 
                   <ul className="list-disc ml-5 text-gray-700 space-y-1">
                     <li>Reading and language processing</li>
@@ -102,7 +138,6 @@ export default function PeoplePage() {
               </div>
             </section>
 
-            {/* Julie */}
             <section className="grid md:grid-cols-[280px_1fr] gap-12 border-t pt-20">
               <div>
                 <Image
@@ -115,9 +150,7 @@ export default function PeoplePage() {
               </div>
 
               <div>
-                <h3 className="text-3xl font-semibold">
-                  Julie Kirkby
-                </h3>
+                <h3 className="text-3xl font-semibold">Julie Kirkby</h3>
 
                 <div className="mt-4 space-y-2 text-gray-600">
                   <p>Principal Academic in Psychology</p>
@@ -140,8 +173,8 @@ export default function PeoplePage() {
                 </div>
 
                 <p className="mt-8 leading-8 text-gray-700">
-                  Julie joined Bournemouth University in 2010 as a Lecturer
-                  in Psychology. Her research lies within cognitive psychology,
+                  Julie joined Bournemouth University in 2010 as a Lecturer in
+                  Psychology. Her research lies within cognitive psychology,
                   with a particular focus on eye movements, reading, and visual
                   cognition.
                 </p>
@@ -149,16 +182,14 @@ export default function PeoplePage() {
                 <p className="mt-4 leading-8 text-gray-700">
                   Her work aims to improve understanding of developmental
                   dyslexia and the cognitive mechanisms underlying reading
-                  difficulties. She has collaborated with Microsoft's Advanced
-                  Reading Technologies team to investigate how assistive
-                  technologies can improve reading accessibility and efficiency
-                  for struggling readers.
+                  difficulties. She has collaborated with Microsoft&apos;s
+                  Advanced Reading Technologies team to investigate how
+                  assistive technologies can improve reading accessibility and
+                  efficiency for struggling readers.
                 </p>
 
                 <div className="mt-8">
-                  <h4 className="font-semibold mb-3">
-                    Research Interests
-                  </h4>
+                  <h4 className="font-semibold mb-3">Research Interests</h4>
 
                   <ul className="list-disc ml-5 text-gray-700 space-y-1">
                     <li>Developmental dyslexia</li>
@@ -180,7 +211,6 @@ export default function PeoplePage() {
               </div>
             </section>
 
-            {/* Otto */}
             <section className="grid md:grid-cols-[280px_1fr] gap-12 border-t pt-20">
               <div>
                 <Image
@@ -193,9 +223,7 @@ export default function PeoplePage() {
               </div>
 
               <div>
-                <h3 className="text-3xl font-semibold">
-                  Otto Loberg
-                </h3>
+                <h3 className="text-3xl font-semibold">Otto Loberg</h3>
 
                 <div className="mt-4 space-y-2 text-gray-600">
                   <p>Senior Lecturer in Psychology</p>
@@ -216,7 +244,7 @@ export default function PeoplePage() {
                 </div>
 
                 <p className="mt-8 leading-8 text-gray-700">
-                  Otto's research focuses on reading development, eye
+                  Otto&apos;s research focuses on reading development, eye
                   movements, and fixation-related brain activity during natural
                   reading.
                 </p>
@@ -228,9 +256,7 @@ export default function PeoplePage() {
                 </p>
 
                 <div className="mt-8">
-                  <h4 className="font-semibold mb-3">
-                    Research Interests
-                  </h4>
+                  <h4 className="font-semibold mb-3">Research Interests</h4>
 
                   <ul className="list-disc ml-5 text-gray-700 space-y-1">
                     <li>Reading development</li>
@@ -254,56 +280,47 @@ export default function PeoplePage() {
           </div>
         </section>
 
-        {/* Postgraduate Students */}
-        <section className="border-t pt-20">
+        <section
+          id="postgraduate-students"
+          className="border-t pt-20 scroll-mt-24"
+        >
           <h2 className="text-3xl font-semibold mb-6">
             Postgraduate Students
           </h2>
 
-          <p className="text-gray-600">
-            Information coming soon.
-          </p>
+          <p className="text-gray-600">Information coming soon.</p>
         </section>
 
-        {/* Research Placement Students */}
-        <section className="border-t pt-20">
+        <section
+          id="research-placement-students"
+          className="border-t pt-20 scroll-mt-24"
+        >
           <h2 className="text-3xl font-semibold mb-6">
             Research Placement Students
           </h2>
 
-          <p className="text-gray-600">
-            Information coming soon.
-          </p>
+          <p className="text-gray-600">Information coming soon.</p>
         </section>
 
-        {/* Alumni */}
-        <section className="border-t pt-20">
-          <h2 className="text-3xl font-semibold mb-6">
-            Alumni
-          </h2>
+        <section id="alumni" className="border-t pt-20 scroll-mt-24">
+          <h2 className="text-3xl font-semibold mb-6">Alumni</h2>
 
-          <p className="text-gray-600">
-            Information coming soon.
-          </p>
+          <p className="text-gray-600">Information coming soon.</p>
         </section>
 
-        {/* Collaborators */}
-        <section className="border-t pt-20">
-          <h2 className="text-3xl font-semibold mb-6">
-            Collaborators
-          </h2>
+        <section id="collaborators" className="border-t pt-20 scroll-mt-24">
+          <h2 className="text-3xl font-semibold mb-6">Collaborators</h2>
 
           <p className="text-gray-600 max-w-3xl leading-8 mb-10">
             The EBaC Lab collaborates with researchers and institutions across
             an international network. A collaboration map will be added here to
-            visualise countries represented in the lab's publication network.
+            visualise countries represented in the lab&apos;s publication
+            network.
           </p>
 
           <div className="border rounded-2xl bg-gray-50 p-10">
             <div className="aspect-[2/1] rounded-xl bg-white border flex items-center justify-center">
-              <p className="text-gray-500">
-                Collaboration map coming soon.
-              </p>
+              <p className="text-gray-500">Collaboration map coming soon.</p>
             </div>
           </div>
         </section>
