@@ -8,14 +8,6 @@ export default function ContactPage() {
       <div className="text-center">
 
         <Image
-          src="/bournemouth.jpg"
-          alt="Bournemouth University"
-          width={250}
-          height={80}
-          className="mx-auto mb-8"
-        />
-
-        <Image
           src="/EBaC.jpg"
           alt="EBaC Lab"
           width={220}
